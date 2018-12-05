@@ -15,5 +15,5 @@ if __name__ == '__main__':
 		f.wait()
 	except KeyboardInterrupt:
 		print('terminating process')
-		f.stdin.write("q")
+		f.communicate("q")
 		f.wait()
